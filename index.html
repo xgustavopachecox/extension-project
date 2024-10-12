@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+    navbar: barra de navegação
+    -->
+    <!-- demonstração de uma tag semantica HEADER -->
+    <header>
+        <ul class="navbar">
+            <li><a href="#home" class="list-item">Home</a></li>
+            <li><a href="#sobre" class="list-item">Sobre</a></li>
+            <li><a href="#feitos" class="list-item">Feitos</a></li>
+            <li><a href="#contatos" class="list-item">Contatos</a></li>
+        </ul>
+    </header>
+
+    <!-- demonstração que nao precisa ser tudo semantico, pode se usar divs -->
+    <div class="container">
+        <div class="hello">
+            <div class="linha"></div>
+            <p>Hello</p>
+        </div>
+        <h1>I'm <span class="sombra">Gustavo</span> Pacheco</h1>
+        <p class="paragrafo-container" id="text">Aqui, você poderá explorar e entender como criar um portfólio que não só impressiona recrutadores, mas também contribui para o desenvolvimento pessoal e profissional. Vamos descobrir juntos como uma boa apresentação pode destacar suas habilidades e conquistas.
+        </p>
+        <div>
+            <label for="checkbox">Mudar a linguagem</label>
+            <input type="checkbox" id="checkbox" name="checkbox">
+        </div>
+        <div>
+            <a href="#sobre" class="botao">Sobre mim...</a>
+        </div>
+    </div>
+
+    <!-- demonstração de uma tag semantica Footer -->
+    <footer>
+        <ul class="footer-list">
+            <li><a href="https://www.linkedin.com/in/gustavo-cpacheco" target="_blank"> <i class="fa-brands fa-linkedin"></i> linkedin</a></li>
+            <li><a href="https://github.com/xgustavopachecox" target="_blank">Github</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    document.getElementById("checkbox").addEventListener("change", function() {
+            if (this.checked) {
+                document.getElementById("text").innerText = "Aqui, você poderá explorar e entender como criar um portfólio que não só impressiona recrutadores, mas também contribui para o desenvolvimento pessoal e profissional. Vamos descobrir juntos como uma boa apresentação pode destacar suas habilidades e conquistas.";
+            } else {
+                document.getElementById("text").innerText = "Here, you can explore and learn how to create a portfolio that not only impresses recruiters but also contributes to personal and professional development. Let’s discover together how a great presentation can highlight your skills and achievements.";
+            }
+        });
+
+</script>

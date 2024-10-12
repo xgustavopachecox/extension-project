@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Roboto';
+}
+
+/* estilização do header */
+
+/* ultilizando a classe navbar */
+.navbar{
+    display: flex;
+    margin: 40px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    list-style-type: none;
+}
+/* ultilizando a classe list-item que esta dentro de navbar */
+
+a, .list-item{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* fim do Header */
+
+/* começo do container */
+.container{
+    width: 700px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 25%;
+}
+.botao{
+    margin-top: 50px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hello {
+    white-space: nowrap; 
+}
+
+.linha {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    margin: 0 10px 2px 0;
+}
+
+.hello p {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.sombra{
+    color: rgb(109, 167, 159);
+}
+
+p{
+    font-size: 18px;
+}
+
+.botao {
+    display: inline-block;
+    width: 100px; 
+    height: 30px;
+    background-color: rgb(109, 167, 159);
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none; 
+    border-radius: 5px; 
+    padding: 0 10px; 
+    white-space: nowrap; 
+}
+
+.botao:hover {
+    background-color: rgb(89, 147, 139); 
+}
+.navbar a:hover, .footer-list a:hover {
+    color: rgb(89, 147, 139);
+}
+/* fim do container */
+
+.footer-list{
+    margin-left: 10%;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.hidden{
+    display: none;
+}
