@@ -36,9 +36,7 @@ a, .list-item{
     gap: 40px;
     margin-left: 25%;
 }
-.botao{
-    margin-top: 50px;
-}
+
 
 h1{
     font-size: 50px;
@@ -68,24 +66,6 @@ h1{
 
 p{
     font-size: 18px;
-}
-
-.botao {
-    display: inline-block;
-    width: 100px; 
-    height: 30px;
-    background-color: rgb(109, 167, 159);
-    color: aliceblue;
-    text-align: center;
-    line-height: 30px;
-    text-decoration: none; 
-    border-radius: 5px; 
-    padding: 0 10px; 
-    white-space: nowrap; 
-}
-
-.botao:hover {
-    background-color: rgb(89, 147, 139); 
 }
 .navbar a:hover, .footer-list a:hover {
     color: rgb(89, 147, 139);
