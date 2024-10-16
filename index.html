@@ -14,11 +14,11 @@
     navbar: barra de navegação
     -->
     <!-- demonstração de uma tag semantica HEADER -->
-    <header>
+    <header id="home">
         <ul class="navbar">
             <li><a href="#home" class="list-item">Home</a></li>
-            <li><a href="#sobre" class="list-item">Sobre</a></li>
-            <li><a href="#feitos" class="list-item">Feitos</a></li>
+            <li><a href="#sobre-mim" class="list-item">Sobre Mim</a></li>
+            <li><a href="#habilidades" class="list-item">Habilidades</a></li>
             <li><a href="#contatos" class="list-item">Contatos</a></li>
         </ul>
     </header>
@@ -37,17 +37,80 @@
             <input type="checkbox" id="checkbox" name="checkbox">
         </div>
         <div>
-            <a href="#sobre" class="botao">Sobre mim...</a>
+            <a href="sobre.html" class="botao">Sobre mim...</a>
         </div>
     </div>
 
+    <!-- Sobre mim -->
+    <section id="sobre-mim" class="sobre-mim">
+        <div class="container-sobre-mim">
+            <h2>Sobre Mim</h2>
+            <div class="content">
+                <div class="text">
+                    <p>Olá! Meu nome é Gustavo Pacheco, sou estudante de Sistemas de Informação no IFSP. Tenho uma paixão por tecnologia e programação, e estou constantemente aprimorando minhas habilidades em desenvolvimento web. Atualmente, estou focado em aprender e trabalhar com tecnologias como React, JavaScript, PHP e MySQL, com o objetivo de me tornar um desenvolvedor fullstack.</p>
+                    <p>Além disso, tenho experiência com projetos acadêmicos e profissionais que envolvem desde o front-end até o back-end. Gosto de desafios e de aprendizados constantes. Fora da programação, sou uma pessoa que valoriza o equilíbrio entre trabalho e vida pessoal, e tenho como meta alcançar um estilo de vida tranquilo e saudável.</p>
+                </div>
+                <div class="image">
+                    <img src="img/perfil.jpg" alt="Foto de Gustavo Pacheco">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades-section">
+        <div class="container-habilidades">
+            <h2>Habilidades</h2>
+            <div class="habilidades-content">
+                <div class="hard-skills">
+                    <h3>Hard Skills</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>PHP & MySQL</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="soft-skills">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Comunicação Eficaz</li>
+                        <li>Trabalho em Equipe</li>
+                        <li>Resolução de Problemas</li>
+                        <li>Gestão de Tempo</li>
+                        <li>Adaptabilidade</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- demonstração de uma tag semantica Footer -->
-    <footer>
-        <ul class="footer-list">
-            <li><a href="https://www.linkedin.com/in/gustavo-cpacheco" target="_blank"> <i class="fa-brands fa-linkedin"></i> linkedin</a></li>
-            <li><a href="https://github.com/xgustavopachecox" target="_blank">Github</a></li>
-        </ul>
+    <footer id="contatos" class="footer">
+        <div class="container-footer">
+            <h2>Contatos</h2>
+            <p>Entre em contato comigo através dos links abaixo:</p>
+            
+            <div class="contact-info">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/gustavopacheco" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gustavopacheco" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <p class="copyright">&copy; 2024 Gustavo Pacheco - Todos os direitos reservados.</p>
+        </div>
     </footer>
+    
 
 </body>
 </html>
