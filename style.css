@@ -5,10 +5,8 @@
     font-family: 'Roboto';
 }
 
-/* estilização do header */
-
-/* ultilizando a classe navbar */
-.navbar{
+/* Estilização do header */
+.barra-navegacao{
     display: flex;
     margin: 40px auto;
     align-items: center;
@@ -16,17 +14,18 @@
     gap: 120px;
     list-style-type: none;
 }
-/* ultilizando a classe list-item que esta dentro de navbar */
 
-a, .list-item{
+a, .item-lista{
     text-decoration: none;
     color: inherit;
 }
 
-/* fim do Header */
+.barra-navegacao a:hover, .rodape-lista a:hover {
+    color: rgb(89, 147, 139);
+}
 
-/* começo do container */
-.container{
+/* Seção Inicial */
+.container-inicial{
     width: 700px;
     height: 100vh;
     margin: auto;
@@ -37,13 +36,12 @@ a, .list-item{
     margin-left: 25%;
 }
 
-
 h1{
     font-size: 50px;
     font-weight: bold;
 }
 
-.hello {
+.olá {
     white-space: nowrap; 
 }
 
@@ -55,7 +53,7 @@ h1{
     margin: 0 10px 2px 0;
 }
 
-.hello p {
+.olá p {
     display: inline-block;
     font-size: 18px;
 }
@@ -67,65 +65,48 @@ h1{
 p{
     font-size: 18px;
 }
-.navbar a:hover, .footer-list a:hover {
-    color: rgb(89, 147, 139);
-}
-/* fim do container */
 
-.footer-list{
-    margin-left: 10%;
-    display: flex;
-    gap: 40px;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.hidden{
-    display: none;
-}
-
-/* parte do Sobre mim */
-.sobre-mim {
+/* Seção Sobre mim */
+.secao-sobre-mim {
     background-color: #f9f9f9;
 }
 
-.sobre-mim .container-sobre-mim {
+.secao-sobre-mim .container-sobre-mim {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
 }
 
-.sobre-mim h2 {
+.secao-sobre-mim h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.sobre-mim .content {
+.secao-sobre-mim .conteudo {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.sobre-mim .text {
+.secao-sobre-mim .texto {
     max-width: 600px;
 }
 
-.sobre-mim .text p {
+.secao-sobre-mim .texto p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.sobre-mim .image img {
-    width: 250px;
-    border-radius: 50%;
+.secao-sobre-mim .imagem img {
+    width: 300px;
+    border-radius: 15%;
+    margin-left: 10%;
 }
 
-/* fim do sobre mim */
-
 /* Habilidades */
-.habilidades-section {
+.secao-habilidades {
     background-color: #ffffff;
 }
 
@@ -135,73 +116,70 @@ p{
     padding: 10%;
 }
 
-.habilidades-section h2 {
+.secao-habilidades h2 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
 }
 
-.habilidades-content {
+.conteudo-habilidades {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
 }
 
-.hard-skills, .soft-skills {
+.habilidades-técnicas, .habilidades-sociais {
     width: 45%;
 }
 
-.hard-skills h3, .soft-skills h3 {
+.habilidades-técnicas h3, .habilidades-sociais h3 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #333;
 }
 
-.hard-skills ul, .soft-skills ul {
+.habilidades-técnicas ul, .habilidades-sociais ul {
     list-style-type: none;
     padding: 0;
 }
 
-.hard-skills li, .soft-skills li {
+.habilidades-técnicas li, .habilidades-sociais li {
     font-size: 18px;
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-/* fim do Habilidades */
-
-/* footer */
-.footer {
+/* Rodapé */
+.rodape {
     color: #333;
     padding: 40px 0;
     text-align: center;
 }
 
-.container-footer {
+.container-rodape {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer h2 {
+.rodape h2 {
     font-size: 30px;
     margin-bottom: 20px;
 }
-
-.footer p {
+.rodape p {
     font-size: 18px;
     margin-bottom: 30px;
 }
 
-.contact-info ul {
+.informacoes-contato ul {
     list-style-type: none;
     padding: 0;
 }
 
-.contact-info ul li {
+.informacoes-contato ul li {
     margin-bottom: 15px;
 }
 
-.contact-info ul li a {
+.informacoes-contato ul li a {
     color: #333;
     font-size: 18px;
     text-decoration: none;
@@ -210,11 +188,11 @@ p{
     justify-content: center;
 }
 
-.contact-info ul li a i {
+.informacoes-contato ul li a i {
     margin-right: 10px;
 }
 
-.contact-info ul li a:hover {
+.informacoes-contato ul li a:hover {
     color: #00bcd4;
 }
 
@@ -224,7 +202,7 @@ p{
     color: #bbb;
 }
 
-/* final footer */
+/* Final */
 html {
     scroll-behavior: smooth;
 }

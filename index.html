@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,56 +10,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- 
-    navbar: barra de navegação
-    -->
-    <!-- demonstração de uma tag semantica HEADER -->
-    <header id="home">
-        <ul class="navbar">
-            <li><a href="#home" class="list-item">Home</a></li>
-            <li><a href="#sobre-mim" class="list-item">Sobre Mim</a></li>
-            <li><a href="#habilidades" class="list-item">Habilidades</a></li>
-            <li><a href="#contatos" class="list-item">Contatos</a></li>
+    <!-- Barra de navegação -->
+    <header>
+        <ul class="barra-navegacao">
+            <li><a href="#inicio" class="item-lista">Home</a></li>
+            <li><a href="#sobre-mim" class="item-lista">Sobre Mim</a></li>
+            <li><a href="#habilidades" class="item-lista">Habilidades</a></li>
+            <li><a href="#contatos" class="item-lista">Contatos</a></li>
         </ul>
     </header>
 
-    <!-- demonstração que nao precisa ser tudo semantico, pode se usar divs -->
-    <div class="container">
-        <div class="hello">
+    <!-- Seção de introdução -->
+    <div class="container-inicial">
+        <div class="olá">
             <div class="linha"></div>
-            <p>Hello</p>
         </div>
-        <h1>I'm <span class="sombra">Gustavo</span> Pacheco</h1>
-        <p class="paragrafo-container" id="text">Aqui, você poderá explorar e entender como criar um portfólio que não só impressiona recrutadores, mas também contribui para o desenvolvimento pessoal e profissional. Vamos descobrir juntos como uma boa apresentação pode destacar suas habilidades e conquistas.
-        </p>
-        <div>
-            <label for="checkbox">Mudar a linguagem</label>
-            <input type="checkbox" id="checkbox" name="checkbox">
-        </div>
+        <h1>Eu sou <span class="sombra">Gustavo</span> Pacheco</h1>
+        <p class="paragrafo-inicial" id="texto">Aqui, você poderá explorar e entender como criar um portfólio que não só impressiona recrutadores, mas também contribui para o desenvolvimento pessoal e profissional. Vamos descobrir juntos como uma boa apresentação pode destacar suas habilidades e conquistas.</p>
     </div>
 
-    <!-- Sobre mim -->
-    <section id="sobre-mim" class="sobre-mim">
+    <!-- Seção Sobre mim -->
+    <section id="sobre-mim" class="secao-sobre-mim">
         <div class="container-sobre-mim">
             <h2>Sobre Mim</h2>
-            <div class="content">
-                <div class="text">
+            <div class="conteudo">
+                <div class="texto">
                     <p>Olá! Meu nome é Gustavo Pacheco, sou estudante de Sistemas de Informação no IFSP. Tenho uma paixão por tecnologia e programação, e estou constantemente aprimorando minhas habilidades em desenvolvimento web. Atualmente, estou focado em aprender e trabalhar com tecnologias como React, JavaScript, PHP e MySQL, com o objetivo de me tornar um desenvolvedor fullstack.</p>
                     <p>Além disso, tenho experiência com projetos acadêmicos e profissionais que envolvem desde o front-end até o back-end. Gosto de desafios e de aprendizados constantes. Fora da programação, sou uma pessoa que valoriza o equilíbrio entre trabalho e vida pessoal, e tenho como meta alcançar um estilo de vida tranquilo e saudável.</p>
                 </div>
-                <div class="image">
-                    <img src="img/perfil.jpg" alt="Foto de Gustavo Pacheco">
+                <div class="imagem">
+                    <img src="foto.jpeg" alt="Foto de Gustavo Pacheco">
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Habilidades -->
-    <section id="habilidades" class="habilidades-section">
+    <!-- Seção de habilidades -->
+    <section id="habilidades" class="secao-habilidades">
         <div class="container-habilidades">
             <h2>Habilidades</h2>
-            <div class="habilidades-content">
-                <div class="hard-skills">
+            <div class="conteudo-habilidades">
+                <div class="habilidades-técnicas">
                     <h3>Hard Skills</h3>
                     <ul>
                         <li>HTML5 & CSS3</li>
@@ -69,7 +60,7 @@
                         <li>Git & GitHub</li>
                     </ul>
                 </div>
-                <div class="soft-skills">
+                <div class="habilidades-sociais">
                     <h3>Soft Skills</h3>
                     <ul>
                         <li>Comunicação Eficaz</li>
@@ -83,13 +74,13 @@
         </div>
     </section>
     
-    <!-- demonstração de uma tag semantica Footer -->
-    <footer id="contatos" class="footer">
-        <div class="container-footer">
+    <!-- Seção de Contatos -->
+    <footer id="contatos" class="rodape">
+        <div class="container-rodape">
             <h2>Contatos</h2>
             <p>Entre em contato comigo através dos links abaixo:</p>
             
-            <div class="contact-info">
+            <div class="informacoes-contato">
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/gustavopacheco" target="_blank">
@@ -107,18 +98,5 @@
             <p class="copyright">&copy; 2024 Gustavo Pacheco - Todos os direitos reservados.</p>
         </div>
     </footer>
-    
-
 </body>
 </html>
-
-<script>
-    document.getElementById("checkbox").addEventListener("change", function() {
-            if (this.checked) {
-                document.getElementById("text").innerText = "Aqui, você poderá explorar e entender como criar um portfólio que não só impressiona recrutadores, mas também contribui para o desenvolvimento pessoal e profissional. Vamos descobrir juntos como uma boa apresentação pode destacar suas habilidades e conquistas.";
-            } else {
-                document.getElementById("text").innerText = "Here, you can explore and learn how to create a portfolio that not only impresses recruiters but also contributes to personal and professional development. Let’s discover together how a great presentation can highlight your skills and achievements.";
-            }
-        });
-
-</script>
