@@ -206,3 +206,9 @@ p{
 html {
     scroll-behavior: smooth;
 }
+
+#linguagem{
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-left: 30%;
+}
